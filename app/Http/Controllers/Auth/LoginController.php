@@ -6,8 +6,6 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
-use Illuminate\Http\Request;
-
 class LoginController extends Controller
 {
     /*
@@ -29,18 +27,6 @@ class LoginController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
-
-    protected function validateLogin(Request $request)
-    {
-        $this->validate($request, [
-            'password' => 'required',
-        ]);
-    }
-
-    protected function credentials(Request $request)
-    {
-        return $request->only('password');
-    }
 
     /**
      * Create a new controller instance.
