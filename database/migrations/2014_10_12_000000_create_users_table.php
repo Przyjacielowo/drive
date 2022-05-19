@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('password');
             $table->id('rank');
             $table->id('group');
-            $table->rememberToken();
             $table->timestamps();
         });
     }
