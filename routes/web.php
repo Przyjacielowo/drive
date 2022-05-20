@@ -18,6 +18,8 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 });
 
+Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login');
+
 Auth::routes([
   'register' => false,
   'reset' => false, 
