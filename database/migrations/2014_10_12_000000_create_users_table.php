@@ -19,6 +19,8 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('login')->unique();
             $table->string('password');
+            $table->smallInteger('group');
+            $table->smallInteger('rank');
             $table->timestamps();
         });
     }
