@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('login')->unique();
             $table->string('password');
             $table->smallInteger('group');
-            $table->smallInteger('rank');
+            $table->smallInteger('rank')->default('0');
             $table->timestamps();
         });
     }
