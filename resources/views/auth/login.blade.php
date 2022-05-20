@@ -21,17 +21,17 @@
                         </div>
 
                         <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
+                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Hasło') }}</label>
 
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @if (session('error')) is-invalid @endif" name="password" required autocomplete="current-password">
+                                <input id="password" type="password" class="form-control @if (session('error')) is-invalid @endif" name="password" required>
 
                             </div>
                         </div>
                         
          
                         @if (session('error'))
-                            <div class="alert alert-success">
+                            <div class="alert alert-danger">
                                 {{ session('error') }}
                             </div>
                         @endif
@@ -50,7 +50,7 @@
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
+                                    {{ __('Zaloguj') }}
                                 </button>
 
                                 {{-- @if (Route::has('password.request'))
