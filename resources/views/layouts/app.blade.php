@@ -36,6 +36,23 @@
             <a href="#" class="nav-link">Contact</a>
         </li>
         </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                @guest
+                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    Logout
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
+
+                @endguest
+
+            </li>
+        </ul>
     </nav>
 
         <main class="py-4">
