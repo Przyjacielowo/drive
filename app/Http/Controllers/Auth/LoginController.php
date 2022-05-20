@@ -43,14 +43,14 @@ class LoginController extends Controller
     public function login(Request $request)
     {   
 
-        dd($request->all());
+        $input = $request->all();
 
         $this->validate($request, [
             'login' => 'required',
             'password' => 'required',
         ]);
 
-        if(auth()->attempt(array('login' => $request['login'], 'password' => $request['password'])))
+        if(auth()->attempt(array('login' => $input['login'], 'password' => $input['password'])))
         {
             return redirect()->route(RouteServiceProvider::HOME);
         }else{
