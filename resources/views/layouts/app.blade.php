@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
 </head>
 <body>
-    <nav class="margin_left main-header navbar navbar-expand navbar-white navbar-light">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light" style="margin-left: 0;">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
         <li class="nav-item">
