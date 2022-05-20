@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('last_name')->nullable();
             $table->string('login')->unique();
             $table->string('password');
-            $table->smallInteger('group');
+            $table->smallInteger('group')->nullable();
             $table->smallInteger('rank')->default('0');
             $table->timestamps();
         });
