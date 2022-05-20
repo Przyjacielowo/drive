@@ -32,7 +32,7 @@
          
                         @if (session('error'))
                             <div class="alert alert-danger">
-                                {{ session('error') }}
+                                {{ __('Login lub hasło jest nieprawidłowe!') }}
                             </div>
                         @endif
                         {{-- <div class="row mb-3">
