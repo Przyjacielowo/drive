@@ -42,19 +42,18 @@ class LoginController extends Controller
 
     public function login(Request $request)
     {   
-
         $input = $request->all();
-
+  
         $this->validate($request, [
             'login' => 'required',
             'password' => 'required',
         ]);
 
-        if(auth()->attempt(array('login' => $input['login'], 'password' => $input['password'])))
+        if(auth()->attempt(array('login' => $request['login'], 'password' => $request['password'])))
         {
-            return redirect()->route(RouteServiceProvider::HOME);
-        } else {
-            return redirect()->route(RouteServiceProvider::LOGIN)
+            return redirect()->route('home');
+        }else{
+            return redirect()->route('login')
                 ->with('error','Email-Address And Password Are Wrong.');
         }
           
