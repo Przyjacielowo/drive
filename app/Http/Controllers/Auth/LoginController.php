@@ -49,7 +49,7 @@ class LoginController extends Controller
             'password' => 'required',
         ]);
 
-        if(auth()->attempt(array('login' => $request['login'], 'password' => $request['password'])))
+        if(auth()->attempt(array('login' => $input['login'], 'password' => $input['password'])))
         {
             return redirect()->route('home');
         }else{
