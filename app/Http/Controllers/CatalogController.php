@@ -12,11 +12,12 @@ class CatalogController extends Controller
         $this->middleware('auth');
     }
 
-    public function show(Request $request) {
-        // dd($request);
-    }
-
     public function create() {
         return view('catalog.create');
     }
+
+    public function show(Request $request) {
+        dd($request);
+    }
+
 }
