@@ -29,7 +29,7 @@
         <ul class="navbar-nav">
             @guest
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="drive.ridiculam.pl" class="nav-link">drive.ridiculam.pl</a>
+                <a href="drive.ridiculam.pl" class="nav-link"><i class="fa-solid fa-images"></i> drive.ridiculam.pl</a>
             </li>
             @endguest 
             @auth
