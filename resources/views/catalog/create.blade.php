@@ -1,5 +1,4 @@
 @extends('home')
-@section('content')
 <div class="content-wrapper">
     <div class="col-md-6">
         <div class="card card-primary">
@@ -27,4 +26,4 @@
         </div>
     </div> 
 </div>
-@endsection
+
