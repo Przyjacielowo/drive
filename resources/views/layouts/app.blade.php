@@ -56,9 +56,8 @@
     <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="../../index3.html" class="brand-link elevation-4">
-      <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+    <a href="https://drive.ridiculam.pl/home" class="brand-link elevation-4">
+      <span class="brand-text font-weight-light" style="font-weight: 700; margin: 0 auto;">drive.ridiculam.pl</span>
     </a>
 
     <!-- Sidebar -->
