@@ -10,7 +10,7 @@ class CatalogController extends Controller
         dd($request);
     }
 
-    public function create(Request $request) {
-        return view('catalog_create');
+    public function create() {
+        return view('catalog.create');
     }
 }
