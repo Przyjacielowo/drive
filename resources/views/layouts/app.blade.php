@@ -42,9 +42,6 @@
         <ul class="navbar-nav ml-auto">
             @auth
             <li class="nav-item d-none d-sm-inline-block">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-            </li>
-            <li class="nav-item d-none d-sm-inline-block">
                 <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Wyloguj</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     {{ csrf_field() }}
