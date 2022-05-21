@@ -1,5 +1,5 @@
 @extends('home')
-<div class="content-wrapper" style="margin-top: 57px;">
+<div class="content-wrapper">
     <div class="col-md-6">
         <div class="card card-primary">
             <div class="card-header">
