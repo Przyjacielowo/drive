@@ -1,3 +1,5 @@
+@extends('layouts.app')
+
 @section('content')
 <div class="content-wrapper">
     <div class="col-md-6">
