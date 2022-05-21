@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
     @auth 
 
     <!-- Main Sidebar Container -->
@@ -98,5 +97,4 @@
             </div>
         </div>
     </div> -->
-</div>
 @endsection
