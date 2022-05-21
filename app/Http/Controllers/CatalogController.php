@@ -6,6 +6,12 @@ use Illuminate\Http\Request;
 
 class CatalogController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function show(Request $request) {
         // dd($request);
     }
