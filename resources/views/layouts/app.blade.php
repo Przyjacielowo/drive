@@ -28,9 +28,6 @@
         <!-- Left navbar links -->
         <ul class="navbar-nav">
             @guest
-            <li class="nav-item">
-                <a class="nav-link" data-widget="pushmenu" href="https://drive.ridiculam.pl" role="button"><font-awesome-icon icon="fa-solid fa-images" /></a>
-            </li>
             <li class="nav-item d-none d-sm-inline-block">
                 <a href="https://drive.ridiculam.pl" class="nav-link">drive.ridiculam.pl</a>
             </li>
