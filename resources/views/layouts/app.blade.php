@@ -123,7 +123,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a href="{{ route('catalog.create', create) }}" class="nav-link active">
+                <a href="{{ route('catalog.create') }}" class="nav-link active">
                     <i class="nav-icon fas fa-copy"></i>
                     <p>
                         Dodaj katalog
