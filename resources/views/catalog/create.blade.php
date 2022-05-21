@@ -1,4 +1,3 @@
-@extends('layouts.app')
 @extends('home')
 
 <div class="content-wrapper">
