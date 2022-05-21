@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('home')
 <div class="content-wrapper">
     <div class="col-md-6">
         <div class="card card-primary">
