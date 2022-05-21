@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@extends('catalog.create')
+
 @section('content')
 
     <nav class="main-header navbar navbar-expand navbar-white navbar-light" @guest style="margin-left: 0;" @endguest>
