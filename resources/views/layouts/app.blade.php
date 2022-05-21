@@ -24,10 +24,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.1/dist/css/adminlte.min.css">
 </head>
 <body>
-        <main>
-            @yield('content')
-        </main>
-
+        
 
 </body>
 </html>
