@@ -103,19 +103,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                 <li class="nav-item">
-                    <a href="../../index.html" class="nav-link">
+                    <a href="{{ route('catalog.show', 1) }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>katalog v1</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../index2.html" class="nav-link">
+                    <a href="{{ route('catalog.show', 2) }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>katalog v2</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="../../index3.html" class="nav-link">
+                    <a href="{{ route('catalog.show', 3) }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>katalog v3</p>
                     </a>

@@ -14,12 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 Route::group(['middleware' => 'auth'], function () {
 
-  Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-  Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-    Route::name('catalog')->group(function () {
-        Route::get('/catalog/{id}', [App\Http\Controllers\CatalogController::class, 'show'])->name('show');
-    });
+    Route::get('/catalog/{id}', [App\Http\Controllers\CatalogController::class, 'show'])->name('show');
 
 });
 
