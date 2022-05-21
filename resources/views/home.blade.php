@@ -1,7 +1,41 @@
 @extends('layouts.app')
 
 @section('content')
-    @auth 
+
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light" @guest style="margin-left: 0;" @endguest>
+        <!-- Left navbar links -->
+        <ul class="navbar-nav">
+            @guest
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="{{ route('home') }}" class="nav-link" style="font-weight: 700; font-size: 22px;">drive.ridiculam.pl</a>
+            </li>
+            @else
+            <li class="nav-item">
+                <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="{{ route('home') }}" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+                <a href="{{ route('home') }}" class="nav-link">Contact</a>
+            </li>
+            @endguest
+        </ul>
+
+        <!-- Right navbar links -->
+        <ul class="navbar-nav ml-auto">
+            @auth
+            <li class="nav-item d-none d-sm-inline-block">
+                <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Wyloguj</a>
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
+            </li>
+            @endauth
+        </ul>
+    </nav>
+
+    @auth
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -80,21 +114,4 @@
     <!-- /.sidebar -->
     </aside>
     @endauth
-    <!-- <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    {{ __('You are logged in!') }}
-                </div>
-            </div>
-        </div>
-    </div> -->
 @endsection
