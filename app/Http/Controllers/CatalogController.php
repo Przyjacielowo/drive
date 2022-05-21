@@ -11,6 +11,6 @@ class CatalogController extends Controller
     }
 
     public function create(Request $request) {
-        return 'Helo somebody';
+        return view('catalog_create');
     }
 }
