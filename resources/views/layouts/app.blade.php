@@ -28,7 +28,7 @@
         <ul class="navbar-nav">
             @guest
             <li class="nav-item d-none d-sm-inline-block">
-                <a href="https://drive.ridiculam.pl" class="nav-link">drive.ridiculam.pl</a>
+                <a href="https://drive.ridiculam.pl" class="nav-link" style="font-weight: 700; font-size: 22px;">drive.ridiculam.pl</a>
             </li>
             @endguest 
             @auth
