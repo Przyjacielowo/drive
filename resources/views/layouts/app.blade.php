@@ -37,10 +37,9 @@
             </li>
         </ul>
 
-        @auth
-
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
+            @auth
             <li class="nav-item d-none d-sm-inline-block">
                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
             </li>
@@ -50,9 +49,12 @@
                     {{ csrf_field() }}
                 </form>
             </li>
+            @endauth
         </ul>
     </nav>
-        
+
+    @auth 
+
         <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
