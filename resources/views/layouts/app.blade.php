@@ -63,7 +63,7 @@
         <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
-        <a href="https://drive.ridiculam.pl/home" class="brand-link elevation-4">
+        <a href="https://drive.ridiculam.pl" class="brand-link elevation-4">
         <span class="brand-text font-weight-light" style="display: block; text-align: center;">drive.ridiculam.pl</span>
         </a>
 
