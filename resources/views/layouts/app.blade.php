@@ -64,8 +64,8 @@
     <div class="sidebar">
       <!-- Sidebar user (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="info">
-          <a href="#" class="d-block" style="display: block; text-align: center;">Administrator</a>
+        <div class="info" style="width: 100%; text-align: center;">
+          <a href="#" class="d-block">Administrator</a>
         </div>
       </div>
 
