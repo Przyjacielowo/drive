@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class CatalogController extends Controller
 {
-    //
+    public function show(Request $request) {
+        dd($request);
+    }
 }
