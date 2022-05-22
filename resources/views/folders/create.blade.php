@@ -27,9 +27,9 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="custom-file-upload" style="border: 1px solid #ccc; display: inline-block; padding: 6px 12px; cursor: pointer;">
+                            <label class="custom-file-upload" style="border: 1px solid #ccc; display: inline-block; padding: 6px 12px; cursor: pointer; font-weight: 300; width: 100%;">
                                 <input type="file" style="display: none;"/>
-                                Custom Upload
+                                Wybierz plik
                             </label>
                         </div>
                     </div>
