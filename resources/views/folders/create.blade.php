@@ -32,16 +32,10 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="file-upload" class="custom-file-upload" style="display: none; border: 1px solid #ccc; display: inline-block; padding: 6px 12px; cursor: pointer; font-weight: 400; width: 100%; border-radius: 5px;">
+                            <label for="file-upload" class="custom-file-upload" style="border: 1px solid #ccc; display: inline-block; padding: 6px 12px; cursor: pointer; font-weight: 400; width: 100%; border-radius: 5px;">
                                 Wybierz plik
                             </label>
-                            <input id="file-upload" type="file" style="" multiple/>
-                            <script>
-                                $(document).ready(function() {
-                                    $('input[type="file"]').change(function() {
-                                    });
-                                });
-                            </script>
+                            <input id="file-upload" type="file" style="display: none;" multiple/>
                         </div>
                     </div>
 
