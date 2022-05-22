@@ -26,9 +26,6 @@
                                     <input type="file" class="custom-file-input" id="exampleInputFile">
                                     <label class="custom-file-label" for="exampleInputFile">Wybierz plik</label>
                                 </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">Załaduj</span>
-                                </div>
                             </div>
                         </div>
                     </div>
