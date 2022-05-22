@@ -39,7 +39,6 @@
                             <script>
                                 $(document).ready(function() {
                                     $('input[type="file"]').change(function() {
-                                        alert("A file has been selected.");
                                     });
                                 });
                             </script>
