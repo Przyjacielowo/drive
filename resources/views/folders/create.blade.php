@@ -37,6 +37,10 @@
                             </label>
                             <input id="file-upload" type="file" style="display: none;" multiple/>
                         </div>
+                        <div class="form-group">
+                            <input type="file" name="file" id="file" class="inputfile" style="width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1;"/>
+                            <label for="file" style="font-size: 1.25em; font-weight: 700; color: white; background-color: black; display: inline-block; cursor: pointer;">Wybierz plik</label>
+                        </div>
                     </div>
 
                     <div class="card-footer">
