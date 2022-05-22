@@ -20,8 +20,9 @@
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
                         <div class="form-group">
+                            <label for="exampleInputFile">Plik wejściowy</label>
                             <label class="custom-file-upload" style="border: 1px solid #ccc; display: inline-block; padding: 6px 12px; cursor: pointer; font-weight: 400; width: 100%; border-radius: 5px;">
-                                <input type="file" style="display: none;" multiple/>
+                                <input type="file" id="exampleInputFile" style="display: none;" multiple/>
                                 Wybierz plik
                             </label>
                         </div>
