@@ -20,11 +20,11 @@
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputFile">Plik wejściowy</label>
                             <div class="input-group">
                                 <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="exampleInputFile">
-                                    <label class="custom-file-label" for="exampleInputFile">Wybierz plik</label>
+                                    <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                    aria-describedby="inputGroupFileAddon01">
+                                    <label class="custom-file-label" for="inputGroupFile01">Wybierz plik</label>
                                 </div>
                             </div>
                         </div>
