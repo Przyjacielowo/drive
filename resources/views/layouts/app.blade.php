@@ -126,7 +126,7 @@
             <a href="{{ route('folders.create') }}" class="nav-link active">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>
-                    Dodaj katalog
+                    Dodaj folder
                 </p>
             </a>
         </li>
