@@ -22,8 +22,8 @@
                         <div class="form-group">
                             <label for="exampleInputFile">Plik wejściowy</label>
                             <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFileLang" lang="pl-PL">
-                                <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+                                <input type="file" class="custom-file-input" id="customFileLang" lang="pl-Pl">
+                                <label class="custom-file-label" for="customFileLang">Wybierz pliki</label>
                             </div>
                         </div>
                     </div>
@@ -35,8 +35,4 @@
             </div>
         </div> 
     </div>
-    <div class="custom-file">
-  <input type="file" class="custom-file-input" id="customFileLang" lang="pl-Pl">
-  <label class="custom-file-label" for="customFileLang">Wybierz pliki</label>
-</div>
 @endsection
