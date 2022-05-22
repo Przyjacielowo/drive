@@ -26,6 +26,12 @@
                                 <label class="custom-file-label" for="customFileLang">Wybierz pliki</label>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <label class="custom-file-upload" style="border: 1px solid #ccc; display: inline-block; padding: 6px 12px; cursor: pointer;">
+                                <input type="file" style="display: none;"/>
+                                Custom Upload
+                            </label>
+                        </div>
                     </div>
 
                     <div class="card-footer">
