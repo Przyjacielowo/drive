@@ -25,7 +25,7 @@ class FoldersController extends Controller
     {
         $folders = Folder::all();        
 
-        return view('folders.index', compact('folders'))
+        return view('folders.index', compact('folders'));
     }
 
     /**
@@ -35,7 +35,7 @@ class FoldersController extends Controller
      */
     public function create()
     {
-        //
+        return view('folders.create');
     }
 
     /**
