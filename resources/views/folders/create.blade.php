@@ -21,14 +21,9 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputFile">Plik wejściowy</label>
-                            <div class="file-field">
-                                <div class="btn btn-primary btn-sm float-left waves-effect waves-light">
-                                    <span>Wybierz plik</span>
-                                    <input type="file">
-                                </div>
-                                <div class="file-path-wrapper">
-                                    <input class="file-path validate" type="text">
-                                </div>
+                            <div class="custom-file my-2">
+                                <input type="file" class="custom-file-input" id="customFileLang" lang="pl-Pl">
+                                <label class="custom-file-label" for="customFileLang">Wybierz pliki</label>
                             </div>
                         </div>
                     </div>
