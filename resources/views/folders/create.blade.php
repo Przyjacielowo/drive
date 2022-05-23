@@ -20,8 +20,8 @@
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
                         
-                        <input type="file" name="file" id="file" class="inputfile" />
-                        <label for="file">Choose a file</label>
+                        <input type="file" name="file" id="file" class="inputfile" style="width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; font-size: 1.25em; font-weight: 700;     color: white; background-color: black; display: inline-block; background-color: red; cursor: pointer;"/>
+                        <label for="file" style="font-size: 1.25em; font-weight: 700; color: white; background-color: black; display: inline-block; background-color: red; cursor: pointer;">Choose a file</label>
                     </div>
 
                     <div class="card-footer">
