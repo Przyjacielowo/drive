@@ -35,11 +35,11 @@
                             <label for="file-input">Plik wejściowy</label>
                         </div>
                         <div class="form-group">
-                                <label for="file" class="input-label" style="background-color: #007bff; color: #fff; padding: 10px; border-radius: 10px;">
-                                    <i class="fa fa-upload" style="margin-right: 10px;"></i>
-                                    <span id="label_span">Wybierz plik...</span>
-                                </label>
-                                <input id="file" type="file" style="display:none;" multiple="true">
+                            <div class="file-upload">
+                                <input class="file-upload__input" type="file" name="myFile[]" id="myFile" style="display: none;" multiple>
+                                <button class="file-upload__button" type="button" style="-webkit-appearance: none; background: #009879; border: 2px solid #00745d; border-radius: 4px; outline: none; padding: 0.5em 0.8em; margin-right: 15px; color: #ffffff  font-size: 1em; cursor: pointer;">Choose File(s)</button>
+                                <span class="file-upload__label" sttyle="max-width: 250px; font-size: 0.95em; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;"></span>
+                            </div>
                         </div>
                     </div>
 
@@ -51,14 +51,34 @@
         </div> 
     </div>
     <script>
-            $('#file').on('change', function(){
-                var files = $(this)[0].files;
-                if(files.length>=2) {
-                    $('#label_span').text(files.length + ' plików')
-                } else {
-                    var filename = split('\\').pop();
-                    $('#label_span').text(filename);
-                }
+        Array.prototype.forEach.call(
+        document.querySelectorAll(".file-upload__button"),
+        function(button) {
+            const hiddenInput = button.parentElement.querySelector(
+            ".file-upload__input"
+            );
+            const label = button.parentElement.querySelector(".file-upload__label");
+            const defaultLabelText = "No file(s) selected";
+
+            // Set default text for label
+            label.textContent = defaultLabelText;
+            label.title = defaultLabelText;
+
+            button.addEventListener("click", function() {
+            hiddenInput.click();
             });
+
+            hiddenInput.addEventListener("change", function() {
+            const filenameList = Array.prototype.map.call(hiddenInput.files, function(
+                file
+            ) {
+                return file.name;
+            });
+
+            label.textContent = filenameList.join(", ") || defaultLabelText;
+            label.title = label.textContent;
+            });
+        }
+        );
     </script>   
 @endsection
