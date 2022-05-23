@@ -35,7 +35,7 @@
                             
                         </div>
                         <div class="form-group">
-                            <label for="file-upload__input">Plik wejściowy</label>
+                            <label for="file-upload__input">Plik wejściowy</label><br>
                                 <input class="file-upload__input" type="file" name="myFile[]" id="myFile" style="display: none;" multiple>
                                 <button class="file-upload__button" type="button" style="-webkit-appearance: none; background: #009879; border: 2px solid #00745d; border-radius: 4px; outline: none; padding: 0.5em 0.8em; margin-right: 15px; color: #ffffff  font-size: 1em; cursor: pointer;">Choose File(s)</button>
                                 <span class="file-upload__label" sttyle="max-width: 250px; font-size: 0.95em; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;"></span>
