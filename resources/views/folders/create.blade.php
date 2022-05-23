@@ -26,7 +26,7 @@
                                 <i class="fa fa-upload" style="margin-right: 7px;"></i>
                                 Wybierz plik(i)
                             </button>
-                            <span class="file-upload__label" style="display: block; max-width: 250px; font-size: 0.95em; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;"></span>
+                            <span class="file-upload__label" style="display: block; margin: 10px 5px 0; font-size: 0.95em; text-overflow: ellipsis; overflow: hidden;"></span>
                         </div>
                     </div>
 
