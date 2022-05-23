@@ -45,7 +45,7 @@
             ".file-upload__input"
             );
             const label = button.parentElement.querySelector(".file-upload__label");
-            const defaultLabelText = "...";
+            const defaultLabelText = "";
 
             // Set default text for label
             label.textContent = defaultLabelText;
