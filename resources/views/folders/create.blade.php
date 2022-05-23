@@ -20,8 +20,8 @@
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
                         
-                        <label class="form-label" for="customFile">Default file input example</label>
-                        <input type="file" class="form-control" id="customFile" />
+                        <input type="file" name="file" id="file" class="inputfile" />
+                        <label for="file">Choose a file</label>
                     </div>
 
                     <div class="card-footer">
