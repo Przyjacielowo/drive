@@ -39,8 +39,9 @@
                                 <input type="file" id="file" class="file" style="opacity: 0; width: 0.1px; height: 0.1px; position: absolute;">
                                 <label for="file" style="display: block; position: relative; width: 200px; height: 50px; border-radius: 25px; background: linear-gradient(40deg,#ff6ec4,#7873f5); box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; cursor: pointer; transition: transform .2s ease-out;">
                                     Wybierz plik
-                                    <p class="file-name" style="position: absolute; bottom: -35px; left: 10px; font-size: 0.85rem; color: #555;"></p>
+                                    
                                 </label>
+                                <p class="file-name" style="position: absolute; bottom: -35px; left: 10px; font-size: 0.85rem; color: #555;"></p>
                             </div>
                         </div>
                     </div>
