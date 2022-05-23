@@ -33,6 +33,8 @@
                         </div>
                         <div class="form-group">
                             <label for="file-input">Plik wejściowy</label>
+                        </div>
+                        <div class="form-group">
                             <input type="file" id="file-input" style="display: none; background-color: blue; padding: 8px; color: #fff; border: 2px solid #9ec3ff; border-radius: 9px; cursor: pointer;" multiple>
                             <label for="file-input" style="background-color: blue; padding: 8px; color: #fff; border: 2px solid #9ec3ff; border-radius: 9px; cursor: pointer;">
                                 <i class="glyphicon glyphicon-open"></i>
