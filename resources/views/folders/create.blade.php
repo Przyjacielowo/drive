@@ -19,34 +19,29 @@
                             <label>Opis</label>
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
-                        
-                        <input type="file" name="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple="" style="width: 0.1px; height: 0.1px; opacity: 0; overflow: hidden; position: absolute; z-index: -1; font-size: 1.25em; font-weight: 700;     color: white; background-color: black; display: inline-block; background-color: red; cursor: pointer;"/>
-                        <label for="file" style="font-size: 1.25em; font-weight: 700; color: white; background-color: black; display: inline-block; background-color: red; cursor: pointer;">Choose a file</label>
-                        <script>
-                            var inputs = document.querySelectorAll( '.inputfile' );
-                            Array.prototype.forEach.call( inputs, function( input )
-                            {
-                                var label	 = input.nextElementSibling,
-                                    labelVal = label.innerHTML;
-
-                                input.addEventListener( 'change', function( e )
-                                {
-                                    var fileName = '';
-                                    if( this.files && this.files.length > 1 )
-                                        fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-                                    else
-                                        fileName = e.target.value.split( '\' ).pop();
-
-                                    if( fileName )
-                                        label.querySelector( 'span' ).innerHTML = fileName;
-                                    else
-                                        label.innerHTML = labelVal;
-                                });
-                            });
-
-
-
-                        </script>
+                        <div class="form-group">
+                            
+                            <div class="input-group">
+                                <div class="custom-file">
+                                    <input type="file" class="custom-file-input" id="exampleInputFile">
+                                    <label class="custom-file-label" for="exampleInputFile">zwrot butów.PNG</label>
+                                </div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">Upload</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="file-upload">Plik wejściowy</label>
+                            <label for="file-upload" class="custom-file-upload" style="border: 1px solid #ccc; display: inline-block; padding: 6px 12px; cursor: pointer; font-weight: 400; width: 100%; border-radius: 5px;">
+                                Wybierz plik
+                            </label>
+                            <input id="file-upload" type="file" style="display: none;" multiple/>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" id="file-input">
+                            <label for="file-input">Wybierz plik...</label>
+                        </div>
                     </div>
 
                     <div class="card-footer">
