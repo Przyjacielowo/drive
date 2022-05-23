@@ -10,7 +10,7 @@
 
 
                 <form>
-                    <div class="card-body">
+                    <div class="card-body" style="padding: 1rem 1rem 0;">
                         <div class="form-group">
                             <label for="catalog_name">Nazwa folderu</label>
                             <input type="email" class="form-control" id="catalog_name">
