@@ -30,7 +30,7 @@
                         </div>
                     </div>
 
-                    <div class="card-footer">
+                    <div class="card-footer" style="padding: 0 1rem 1rem;">
                         <button type="submit" class="btn btn-primary">Dodaj</button>
                     </div>
                 </form>
