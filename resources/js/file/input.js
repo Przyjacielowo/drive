@@ -1,4 +1,4 @@
-Array.prototype.forEach.call(
+/*Array.prototype.forEach.call(
 	document.querySelectorAll(".file-upload__button"),
 	function(button) {
 			const hiddenInput = button.parentElement.querySelector(
@@ -26,4 +26,4 @@ Array.prototype.forEach.call(
 			label.title = label.textContent;
 			});
 	}
-	);
+	); */
