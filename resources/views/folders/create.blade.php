@@ -56,7 +56,7 @@
                 if(files.length>=2) {
                     $('#label_span').text(files.length + ' plików')
                 } else {
-                    var filename = e.target.value.split('\\').pop();
+                    var filename = target.value.split('\\').pop();
                     $('#label_span').text(filename);
                 }
             });
