@@ -20,21 +20,6 @@
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
                         <div class="form-group">
-                            
-                            <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" id="exampleInputFile">
-                                    <label class="custom-file-label" for="exampleInputFile">zwrot butów.PNG</label>
-                                </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">Upload</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            
-                        </div>
-                        <div class="form-group">
                             <label for="file-upload__input">Plik wejściowy</label><br>
                                 <input class="file-upload__input" type="file" name="myFile[]" id="myFile" style="display: none;" multiple>
                                 <button class="file-upload__button" type="button" style="-webkit-appearance: none; color: #fff; background-color: #007bff; border-color: #007bff; box-shadow: none; border-radius: 4px; outline: none; padding: 0.375rem 0.75rem; margin-right: 7px; font-size: 1em; cursor: pointer; font-weight: 400;">Wybierz pliki</button>
