@@ -39,12 +39,15 @@
                             <input id="file-upload" type="file" style="display: none;" multiple/>
                         </div>
                         <div class="form-group">
-                            <input type="file" id="file-input" style="display: none; background-color: blue; padding: 8px; color: #fff; border: 2px solid #9ec3ff; border-radius: 9px; cursor: pinter;">
-                            <label for="file-input" style="background-color: blue; padding: 8px; color: #fff; border: 2px solid #9ec3ff; border-radius: 9px; cursor: pinter;">
+                            <input type="file" id="file-input" style="display: none; background-color: blue; padding: 8px; color: #fff; border: 2px solid #9ec3ff; border-radius: 9px; cursor: pointer;">
+                            <label for="file-input" style="background-color: blue; padding: 8px; color: #fff; border: 2px solid #9ec3ff; border-radius: 9px; cursor: pointer;">
                             <i class="glyphicon glyphicon-open"></i>
-                            &nbsp;
-                            Wybierz plik...
+                            &nbsp;Wybierz plik...
                             </label>
+                            <span>
+                                <strong>Wybrany plik:</strong>
+                                <span id="file-name">XD</span>
+                            </span>
                         </div>
                     </div>
 
