@@ -35,15 +35,13 @@
                             <label for="file-input">Plik wejściowy</label>
                         </div>
                         <div class="form-group">
-                            <input type="file" id="file-input" style="display: none; background-color: blue; padding: 8px; color: #fff; border: 2px solid #9ec3ff; border-radius: 9px; cursor: pointer;" multiple>
-                            <label for="file-input" style="background-color: blue; padding: 8px; color: #fff; border: 2px solid #9ec3ff; border-radius: 9px; cursor: pointer;">
-                                <i class="glyphicon glyphicon-open"></i>
-                                &nbsp;Wybierz plik...
-                            </label>
-                            <span>
-                                <strong>Wybrany plik:</strong>
-                                <span id="file-name">...</span>
-                            </span>
+                            <div class="file-input">
+                                <input type="file" id="file" class="file" style="opacity: 0; width: 0.1px; height: 0.1px; position: absolute;">
+                                <label for="file" style="display: block; position: relative; width: 200px; height: 50px; border-radius: 25px; background: linear-gradient(40deg,#ff6ec4,#7873f5); box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; cursor: pointer; transition: transform .2s ease-out;">
+                                    Wybierz plik
+                                    <p class="file-name" style="position: absolute; bottom: -35px; left: 10px; font-size: 0.85rem; color: #555;"></p>
+                                </label>
+                            </div>
                         </div>
                     </div>
 
@@ -55,11 +53,17 @@
         </div> 
     </div>
     <script>
-        let inputFile = document.getElementById('file-input');
-        let fileNameField = document.getElementById('file-name');
-        inputFile.addEventListener('change', function(event){
-            let uploadedFileName = event.target.files[0].name;
-            fileNameField.textContent = uploadedFileName;
-        })
+        const file = document.querySelector('#file');
+        file.addEventListener('change', (e) => {
+        // Get the selected file
+        const [file] = e.target.files;
+        // Get the file name and size
+        const { name: fileName, size } = file;
+        // Convert size in bytes to kilo bytes
+        const fileSize = (size / 1000).toFixed(2);
+        // Set the text content
+        const fileNameAndSize = `${fileName} - ${fileSize}KB`;
+        document.querySelector('.file-name').textContent = fileNameAndSize;
+        });
     </script>   
 @endsection
