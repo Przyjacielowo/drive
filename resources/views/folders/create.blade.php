@@ -35,14 +35,11 @@
                             <label for="file-input">Plik wejściowy</label>
                         </div>
                         <div class="form-group">
-                            <div class="file-input">
-                                <input type="file" id="file" class="file" style="opacity: 0; width: 0.1px; height: 0.1px; position: absolute;" multiple>
-                                <label for="file" style="display: block; width: 200px; height: 50px; border-radius: 25px; background: linear-gradient(40deg,#ff6ec4,#7873f5); box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4); display: flex; align-items: center; justify-content: center; color: #fff; font-weight: bold; cursor: pointer; transition: transform .2s ease-out;">
-                                    Wybierz plik
-                                    
+                                <label for="file" class="input-label" style="background-color: #007bff; color: #fff; padding: 10px; border-radius: 10px;">
+                                    <i class="fa fa-upload" style="margin-right: 10px;"></i>
+                                    <span id="label_span">Wybierz plik...</span>
                                 </label>
-                                <p class="file-name" style="font-size: 0.85rem; color: #555;"></p>
-                            </div>
+                                <input id="file" type="file" style="display:none;" multiple="true">
                         </div>
                     </div>
 
@@ -54,17 +51,16 @@
         </div> 
     </div>
     <script>
-        const file = document.querySelector('#file');
-        file.addEventListener('change', (e) => {
-        // Get the selected file
-        const [file] = e.target.files;
-        // Get the file name and size
-        const { name: fileName, size } = file;
-        // Convert size in bytes to kilo bytes
-        const fileSize = (size / 1000).toFixed(2);
-        // Set the text content
-        const fileNameAndSize = `${fileName} - ${fileSize}KB`;
-        document.querySelector('.file-name').textContent = fileNameAndSize;
+        $(document).ready(function(){
+            $('#file').on('change', function(){
+                var files = $(this)[0].files;
+                if(files.length>=2) {
+                    $('#label_span').text(files.length + ' plików')
+                } else {
+                    var filename = e.target.value.split('\\').pop();
+                    $('#label_span').text(filename);
+                }
+            });
         });
     </script>   
 @endsection
