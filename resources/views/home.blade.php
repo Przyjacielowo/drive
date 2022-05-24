@@ -4,7 +4,7 @@
 
 	<div class="content-wrapper">
 		<div class="folder_container">
-			<i class="fa-solid fa-folder"></i>
+			<font-awesome-icon icon="fa-solid fa-folder" />
 		</div>
 		
 
