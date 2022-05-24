@@ -16,7 +16,7 @@
                         </div>
                         <div class="form-group">
                             <label for="form-control">Opis</label>
-                            <textarea class="form-control" rows="3" name="description"></textarea>
+                            <textarea class="form-control" rows="3" name="catalog_description"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="file_upload_input">Pliki wejściowe</label>
