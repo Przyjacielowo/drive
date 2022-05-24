@@ -38,13 +38,12 @@ $(function() {
     $('.file-upload__input').on('change', function() {
 
 
-        var count = $('.file-upload__input')[0].files.length > 30 ? $('.file-upload__input')[0].files.length : 30;
+        var count = $('.file-upload__input')[0].files.length <= 30 ? $('.file-upload__input')[0].files.length : 30;
         var file = [];
 
         if(count > 0) {
             for (var i = 0; i < count; i++) {
-                console.log($('.file-upload__input')[0]['files'][i]['name']);
-                // file[i] = $('.file-upload__input')[0]['files'][i]['name'];
+                file[i] = $('.file-upload__input')[0]['files'][i]['name'];
             }
         }
         console.log(file.join(', ') + count == 30 ? '...' : '');
