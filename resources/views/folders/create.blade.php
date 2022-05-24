@@ -19,13 +19,13 @@
                             <textarea class="form-control" rows="3" name="description"></textarea>
                         </div>
                         <div class="form-group">
-                            <label for="file-upload__input">Pliki wejściowe</label>
-                            <input class="file-upload__input" type="file" name="myFile[]" id="myFile" multiple accept="image/*">
-                            <button class="file-upload__button" type="button">
+                            <label for="file_upload_input">Pliki wejściowe</label>
+                            <input class="file_upload_input" type="file" name="file[]" id="file" multiple accept="image/*">
+                            <button class="file_upload_button" type="button">
                                 <i class="fa fa-upload"></i>
                                 Wybierz pliki
                             </button>
-                            <span class="file-upload__label"></span>
+                            <span class="file_upload_label"></span>
                         </div>
                     </div>
 
