@@ -37,7 +37,7 @@ $(function() {
     });
 
     $('.file-upload__input').on('change', function() {
-        console.log($('.file-upload__input')[0].files.length);
+        console.log($('.file-upload__input')[0].files);
     });
 
 });
