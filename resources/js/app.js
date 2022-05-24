@@ -31,18 +31,18 @@
 //     el: '#app',
 // });
 $(function() {
-    $('.file-upload__button').on('click', function() {
-        $('.file-upload__input').click();
+    $('.file_upload_button').on('click', function() {
+        $('.file_upload_input').click();
     });
 
-    $('.file-upload__input').on('change', function() {
+    $('.file_upload_input').on('change', function() {
 
-        var count = $('.file-upload__input')[0].files.length <= 30 ? $('.file-upload__input')[0].files.length : 30;
+        var count = $('.file_upload_input')[0].files.length <= 30 ? $('.file_upload_input')[0].files.length : 30;
         var file = '';
 
         if(count > 0) {
             for (var i = 0; i < count; i++) {
-                file += $('.file-upload__input')[0]['files'][i]['name'];
+                file += $('.file_upload_input')[0]['files'][i]['name'];
                 if(i + 1 != count) {
                     file += ', ';
                 }
@@ -53,7 +53,7 @@ $(function() {
             file += '...';
         }
 
-        $('.file-upload__label').text(file);
+        $('.file_upload_label').text(file);
     });
 
 });
