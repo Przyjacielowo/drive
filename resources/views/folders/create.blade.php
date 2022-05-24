@@ -8,7 +8,6 @@
                     <h3 class="card-title">Dodaj folder</h3>
                 </div>
 
-
                 <form>
                     <div class="card-body" style="padding: 1rem 1rem 0;">
                         <div class="form-group">
@@ -34,6 +33,7 @@
                         <button type="submit" class="btn btn-primary">Dodaj</button>
                     </div>
                 </form>
+                
             </div>
         </div> 
     </div>
