@@ -32,11 +32,12 @@
 // });
 $(function() {
     $('.file-upload__button').on('click', function() {
-        $('.file-upload_input').click();
+        console.log('1');
+        $('.file-upload__input').click();
     });
 
-    $('.file-upload_input').on('change', function() {
-        console.log($('.file-upload_input').val());
+    $('.file-upload__input').on('change', function() {
+        console.log($('.file-upload__input').val());
     });
 
 });
