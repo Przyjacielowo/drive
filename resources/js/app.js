@@ -33,10 +33,11 @@
 $(function() {
     $('.file-upload__label').on('click', function() {
         $('.file-upload_input').click();
+        console.log('123');
     });
 
     $('.file-upload__label').on('change', function() {
-        print_r($('.file-upload_input').val());
+        console.log($('.file-upload_input').val());
     });
 
 });
