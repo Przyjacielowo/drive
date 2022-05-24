@@ -20,12 +20,12 @@
 
 /* file upload input */
 
-.file_upload__input
+.file_upload_input
 {
 	display: none;
 }
 
-.file_upload__button
+.file_upload_button
 {
 	display: block;
 	-webkit-appearance: none;
@@ -42,7 +42,7 @@
 	font-weight: 400;
 }
 
-.file_upload__label
+.file_upload_label
 {
 	display: block;
 	margin: 10px 5px 0;
