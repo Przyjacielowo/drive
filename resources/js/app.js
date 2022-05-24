@@ -43,10 +43,10 @@ $(function() {
 
         if(count > 0) {
             for (var i = 0; i < count; i++) {
-                file[i] = $('.file-upload__input')[0]['files'][i]['name'];
+                file[] = $('.file-upload__input')[0]['files'][i]['name'];
             }
         }
-        console.log(file.join(', ') + count == 30 ? '...' : '');
+        console.log(file.implode(', ') + count == 30 ? '...' : '');
     });
 
 });
