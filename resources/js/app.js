@@ -48,6 +48,11 @@ $(function() {
                 }
             }
         }
+
+        if(count == 30) {
+            file += '...';
+        }
+
         console.log(file);
     });
 
