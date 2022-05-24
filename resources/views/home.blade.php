@@ -4,7 +4,8 @@
 
 	<div class="content-wrapper">
 		<div class="folder_container">
-			<font-awesome-icon icon="fa-solid fa-folder" />
+			<i class="fa-solid fa-folder" style=""></i>
+			<span>Nazwa folderu.pl</span>
 		</div>
 		
 
