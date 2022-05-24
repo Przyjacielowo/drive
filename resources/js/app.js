@@ -43,7 +43,7 @@ $(function() {
 
         if(count > 0) {
             for (var i = 0; i < count; i++) {
-                file[] = $('.file-upload__input')[0]['files'][i]['name'];
+                file[i] = $('.file-upload__input')[0]['files'][i]['name'];
             }
         }
         console.log(file.implode(', ') + count == 30 ? '...' : '');
