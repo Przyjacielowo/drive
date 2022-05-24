@@ -39,11 +39,11 @@ $(function() {
 
 
         var count = $('.file-upload__input')[0].files.length <= 30 ? $('.file-upload__input')[0].files.length : 30;
-        var file = [];
+        var file = "";
 
         if(count > 0) {
             for (var i = 0; i < count; i++) {
-                file[i] = $('.file-upload__input')[0]['files'][i]['name'];
+                file += $('.file-upload__input')[0]['files'][i]['name'] + i + 1 != count ? ', ' : '';
             }
         }
         console.log(file.implode(', ') + count == 30 ? '...' : '');
