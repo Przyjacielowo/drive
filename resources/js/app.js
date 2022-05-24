@@ -30,3 +30,13 @@
 // const app = new Vue({
 //     el: '#app',
 // });
+$(function() {
+    $('.file-upload__label').on('click', function() {
+        $('.file-upload_input').click();
+    });
+
+    $('.file-upload__label').on('change', function() {
+        print_r($('.file-upload_input').val());
+    });
+
+});
