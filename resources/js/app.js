@@ -46,7 +46,7 @@ $(function() {
                 file += $('.file-upload__input')[0]['files'][i]['name'] + i + 1 != count ? ', ' : '';
             }
         }
-        console.log(file.implode(', ') + count == 30 ? '...' : '');
+        console.log(file + count == 30 ? '...' : '');
     });
 
 });
