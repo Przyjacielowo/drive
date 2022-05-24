@@ -32,11 +32,12 @@
 // });
 $(function() {
     $('.file-upload__button').on('click', function() {
-        console.log('1');
         $('.file-upload__input').click();
     });
 
     $('.file-upload__input').on('change', function() {
+
+        console.log($('.file-upload__input')[0].files);
 
         var count = $('.file-upload__input')[0].files.length > 30 ? $('.file-upload__input')[0].files.length : 30;
         var file = [];
