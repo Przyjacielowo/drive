@@ -49,6 +49,7 @@ $(function() {
             }
         }
 
+        console.log(count);
         if(count == 30) {
             file += '...';
         }
