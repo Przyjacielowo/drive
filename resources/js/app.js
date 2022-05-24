@@ -31,12 +31,12 @@
 //     el: '#app',
 // });
 $(function() {
-    $('.file-upload__label').on('click', function() {
+    $('.file-upload__button').on('click', function() {
         $('.file-upload_input').click();
         console.log('123');
     });
 
-    $('.file-upload__label').on('change', function() {
+    $('.file-upload_input').on('change', function() {
         console.log($('.file-upload_input').val());
     });
 
