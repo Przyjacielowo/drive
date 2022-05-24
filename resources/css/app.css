@@ -10,12 +10,12 @@
 
 .card-body
 {
-	padding: 1rem 1rem 0;
+	padding: 1rem 1rem 0 !important;
 }
 
 .card-footer
 {
-	padding: 0 1rem 1rem;
+	padding: 0 1rem 1rem !important;
 }
 
 /* file upload input */
