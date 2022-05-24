@@ -38,6 +38,7 @@ $(function() {
     $('.file-upload__input').on('change', function() {
 
         console.log($('.file-upload__input')[0].files[1].name);
+        console.log($('.file-upload__input')[0]['files'[1]['name']);
 
         var count = $('.file-upload__input')[0].files.length > 30 ? $('.file-upload__input')[0].files.length : 30;
         var file = [];
