@@ -49,12 +49,11 @@ $(function() {
             }
         }
 
-        console.log(count);
-        if(count == 30) {
+        if(count >= 30) {
             file += '...';
         }
 
-        console.log(file);
+        $('.file-upload__label').text(file);
     });
 
 });
