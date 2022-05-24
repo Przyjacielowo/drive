@@ -42,9 +42,10 @@ $(function() {
 
         if(count > 0) {
             for (var i = 0; i < count; i++) {
-                console.log($('.file-upload__input')[0].files.[i].name);
-                console.log($('.file-upload__input')[0]['files'][i]['name'] + ((i + 1) != count) ? ', ' : '');
-                file += $('.file-upload__input')[0]['files'][i]['name'] + ((i + 1) != count) ? ', ' : '';
+                file += $('.file-upload__input')[0]['files'][i]['name'];
+                if(i + 1 != count) {
+                    file += ', ';
+                }
             }
         }
         console.log(file + (count == 30) ? '...' : '');
