@@ -12,16 +12,16 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="catalog_name">Nazwa folderu</label>
-                            <input type="text" class="form-control" id="catalog_name" name="catalog_name">
+                            <label for="folder_name">Nazwa folderu</label>
+                            <input type="text" class="form-control" id="folder_name" name="folder_name">
                         </div>
                         <div class="form-group">
                             <label for="form-control">Opis</label>
-                            <textarea class="form-control" rows="3" name="catalog_description"></textarea>
+                            <textarea class="form-control" rows="3" name="folder_description"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="file_upload_input">Pliki wejściowe</label>
-                            <input class="file_upload_input" type="file" name="file[]" id="file" multiple accept="image/*">
+                            <input class="file_upload_input" type="file" name="folder_file[]" id="file" multiple accept="image/*">
                             <button class="file_upload_button" type="button">
                                 <i class="fa fa-upload"></i>
                                 Wybierz pliki
