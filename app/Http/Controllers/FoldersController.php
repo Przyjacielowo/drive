@@ -1,8 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use Illuminate\Support\Facades\DB;
 
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
 class FoldersController extends Controller
@@ -47,11 +48,19 @@ class FoldersController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
-        $id = DB::table('users')->insertGetId([
-            'name' => 'john@example.com', 
-            'votes' => 0
+        $folder_id = DB::table('folder')->insertGetId([
+            'name' => $request->input('name'), 
+            'description' => $request->input('description')
         ]);
+
+        $path = Storage::putFile('photos', $request->file('photo'));
+
+        DB::table('folder')->insert([
+            'folder_id' => $folder_id, 
+            'path' => $path
+        ]);
+
+        return redirect()->route('home');
     }
 
     /**
