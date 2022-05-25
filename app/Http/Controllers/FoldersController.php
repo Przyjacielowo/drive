@@ -53,12 +53,15 @@ class FoldersController extends Controller
             'description' => $request->input('folder_description')
         ]);
 
-        $path = Storage::putFile('photos', $request->file('folder_file'));
-
-        DB::table('photos')->insert([
-            'folder_id' => $folder_id, 
-            'path' => $path
-        ]);
+        if($request->file('folder_file')) {
+            foreach($request->file('folder_file') as $file) {
+                $path = Storage::putFile('photos', $file);
+                DB::table('photos')->insert([
+                    'folder_id' => $folder_id, 
+                    'path' => $path
+                ]);
+            }
+        }
 
         return redirect()->route('home');
     }
