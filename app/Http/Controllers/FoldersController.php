@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 use Illuminate\Http\Request;
 
@@ -23,7 +24,7 @@ class FoldersController extends Controller
      */
     public function index()
     {
-        $folders = Folder::all();        
+        $folders = DB::table('folders')->get();        
 
         return view('folders.index', compact('folders'));
     }
@@ -46,7 +47,7 @@ class FoldersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request);
     }
 
     /**

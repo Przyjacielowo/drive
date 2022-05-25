@@ -8,7 +8,7 @@
                     <h3 class="card-title">Dodaj folder</h3>
                 </div>
 
-                <form>
+                <form action="{{ route('folders.store') }}" method="post" enctype="multipart/form-data">
                     <div class="card-body">
                         <div class="form-group">
                             <label for="catalog_name">Nazwa folderu</label>
