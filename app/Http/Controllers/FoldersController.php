@@ -48,14 +48,14 @@ class FoldersController extends Controller
      */
     public function store(Request $request)
     {
-        $folder_id = DB::table('folder')->insertGetId([
+        $folder_id = DB::table('folders')->insertGetId([
             'name' => $request->input('name'), 
             'description' => $request->input('description')
         ]);
 
         $path = Storage::putFile('photos', $request->file('photo'));
 
-        DB::table('folder')->insert([
+        DB::table('photos')->insert([
             'folder_id' => $folder_id, 
             'path' => $path
         ]);
