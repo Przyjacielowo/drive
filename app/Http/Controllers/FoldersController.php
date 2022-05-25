@@ -47,7 +47,11 @@ class FoldersController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        dd($request->all());
+        $id = DB::table('users')->insertGetId([
+            'name' => 'john@example.com', 
+            'votes' => 0
+        ]);
     }
 
     /**
