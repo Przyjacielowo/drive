@@ -48,6 +48,7 @@ class FoldersController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->input('name'));
         $folder_id = DB::table('folders')->insertGetId([
             'name' => $request->input('name'), 
             'description' => $request->input('description')
