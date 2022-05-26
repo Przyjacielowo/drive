@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="content-wrapper">
-        <div class="col-sm-10 my-2">
+        <div class="col-sm-10 my-2 flex-row-reverse">
             <button type="button" class="btn btn-primary">Dodaj</button>
         </div>
         <div class="col-md-8">
