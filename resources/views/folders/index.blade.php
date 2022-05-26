@@ -26,10 +26,10 @@
                                 <td>{{ $folder->description }}</td>
                                 <td>{{ $folder->count }}</td>
                                 <td>
-                                    <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-primary btn-group-sm">Zobacz</button>
-                                        <button type="button" class="btn btn-success btn-group-sm">Edytuj</button>
-                                        <button type="button" class="btn btn-danger btn-group-sm">Usuń</button>
+                                    <div class="btn-group btn-group-sm" role="group">
+                                        <button type="button" class="btn btn-primary">Zobacz</button>
+                                        <button type="button" class="btn btn-success">Edytuj</button>
+                                        <button type="button" class="btn btn-danger">Usuń</button>
                                     </div>
                                 </td>
                             </tr>
