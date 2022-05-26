@@ -3,7 +3,9 @@
 @section('content')
     <div class="content-wrapper">
         <div class="col-md-8">
-            <button type="button" class="btn btn-primary pull-right">Dodaj</button>
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-primary pull-right">Dodaj</button>
+            </div>
             <div class="card card-primary">
                 <div class="card-header">
                     <h3 class="card-title">Foldery</h3>
