@@ -28,7 +28,8 @@ class FoldersController extends Controller
         $folders = DB::table('folders')
             ->select(array('*', DB::raw('count(photos.id) as count')))
             ->leftJoin('photos', 'folders.id', '=', 'photos.folder_id')
-            ->groupBy('folders.id'),
+            ->groupBy('folders.id')
+            ->orderByDesc('folders.id')
             ->paginate(20);
 
         dd($folders);
