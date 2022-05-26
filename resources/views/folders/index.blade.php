@@ -7,7 +7,7 @@
                 <div class="card-header">
                     <h3 class="card-title">Foldery</h3>
                 </div>
-                <table class="table">
+                <table class="table table-striped">
                     <thead>
                         <tr>
                             <th scope="col">ID</th>
