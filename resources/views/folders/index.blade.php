@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="content-wrapper container">
+    <div class="content-wrapper">
         <div class="col-sm-10 my-2 d-flex">
 {{--            <button type="button" class="btn btn-primary mr-auto p-2">Dodaj</button>--}}
             <div class="mr-auto p-2">Flex item</div>
