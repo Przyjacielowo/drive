@@ -30,7 +30,7 @@
                     </tbody>
                 </table>
             </div>
-            {{ $folders->links() }}
         </div>
+        {{ $folders->links() }}
     </div>
 @endsection
