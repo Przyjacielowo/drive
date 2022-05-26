@@ -3,10 +3,10 @@
 @section('content')
     <div class="content-wrapper">
         <div class="col-md-8">
+            <button type="button" class="btn btn-primary pull-right">Dodaj</button>
             <div class="card card-primary">
                 <div class="card-header">
                     <h3 class="card-title">Foldery</h3>
-                    <button type="button" class="btn btn-primary pull-right">Dodaj</button>
                 </div>
                 <table class="table table-striped">
                     <thead>
@@ -27,9 +27,9 @@
                                 <td>{{ $folder->count }}</td>
                                 <td>
                                     <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-primary">Zobacz</button>
-                                        <button type="button" class="btn btn-success">Edytuj</button>
-                                        <button type="button" class="btn btn-danger">Usuń</button>
+                                        <button type="button" class="btn btn-primary btn-group-sm">Zobacz</button>
+                                        <button type="button" class="btn btn-success btn-group-sm">Edytuj</button>
+                                        <button type="button" class="btn btn-danger btn-group-sm">Usuń</button>
                                     </div>
                                 </td>
                             </tr>
