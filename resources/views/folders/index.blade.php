@@ -3,7 +3,8 @@
 @section('content')
     <div class="content-wrapper">
         <div class="col-sm-10 my-2 d-flex">
-            <button type="button" class="btn btn-primary mr-auto p-2">Dodaj</button>
+{{--            <button type="button" class="btn btn-primary mr-auto p-2">Dodaj</button>--}}
+            <div class="mr-auto p-2">Flex item</div>
         </div>
         <div class="col-md-8">
             <div class="card card-primary">
