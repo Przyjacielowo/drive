@@ -26,7 +26,6 @@ class FoldersController extends Controller
     public function index()
     {
         $folders = DB::table('folders')
-            ->select(DB::raw('folders.*, count(photos.id) as count'))
             ->leftJoin('photos', 'folders.id', '=', 'photos.folder_id')
             ->orderByDesc('folders.id')
             ->paginate(20);
