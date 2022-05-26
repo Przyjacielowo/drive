@@ -6,6 +6,7 @@
             <div class="card card-primary">
                 <div class="card-header">
                     <h3 class="card-title">Foldery</h3>
+                    <button type="button" class="btn btn-primary pull-right">Dodaj</button>
                 </div>
                 <table class="table table-striped">
                     <thead>
@@ -24,7 +25,13 @@
                                 <td>{{ $folder->name }}</td>
                                 <td>{{ $folder->description }}</td>
                                 <td>{{ $folder->count }}</td>
-                                <td>Option</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button type="button" class="btn btn-primary">Zobacz</button>
+                                        <button type="button" class="btn btn-success">Edytuj</button>
+                                        <button type="button" class="btn btn-danger">Usuń</button>
+                                    </div>
+                                </td>
                             </tr>
                         @endforeach
                     </tbody>
