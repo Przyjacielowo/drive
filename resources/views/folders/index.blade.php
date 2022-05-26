@@ -3,7 +3,7 @@
 @section('content')
     <div class="content-wrapper">
         <div class="col-md-10 my-2 d-flex">
-            <button type="button" class="btn btn-primary ml-auto">Dodaj</button>
+            <a type="button" href="{{ route('folders.create') }}" class="btn btn-primary ml-auto">Dodaj</a>
         </div>
         <div class="col-md-8">
             <div class="card card-primary">
