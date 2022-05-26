@@ -32,8 +32,6 @@ class FoldersController extends Controller
             ->orderByDesc('folders.id')
             ->paginate(20);
 
-        dd($folders);
-
         return view('folders.index', compact('folders'));
     }
 

@@ -8,14 +8,27 @@
                     <h3 class="card-title">Foldery folder</h3>
                 </div>
 
-                <table>
+                <table class="table">
                     <thead>
-
-
-                    </thead>
                     <tr>
-
+                        <th scope="col">ID</th>
+                        <th scope="col">Nazwa</th>
+                        <th scope="col">Opis</th>
+                        <th scope="col">Ilość zdjęć</th>
+                        <th scope="col">Opcje</th>
                     </tr>
+                    </thead>
+                    <tbody>
+                    @foreach ($folders as $folder)
+                        <tr>
+                            <th scope="row">{{ $folder->id }}</th>
+                            <td>{{ $folder->name }}</td>
+                            <td>{{ $folder->description }}</td>
+                            <td>{{ $folder->count }}</td>
+                            <td>Option</td>
+                        </tr>
+                    @endforeach
+                    </tbody>
                 </table>
 
             </div>
