@@ -26,6 +26,7 @@ class FoldersController extends Controller
     public function index()
     {
         $folders = DB::table('folders')
+            ->select('*')
             ->select(DB::raw('count(*) as count'))
             ->leftJoin('photos', 'folder_id', '=', 'photos.folder_id')
             ->get();
