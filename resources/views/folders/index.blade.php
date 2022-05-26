@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="content-wrapper">
-        <div class="col-sm-10 my-2 flex-row-reverse">
-            <button type="button" class="btn btn-primary">Dodaj</button>
+        <div class="col-sm-10 my-2 d-flex">
+            <button type="button" class="btn btn-primary mr-auto p-2">Dodaj</button>
         </div>
         <div class="col-md-8">
             <div class="card card-primary">
