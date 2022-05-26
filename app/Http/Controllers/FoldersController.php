@@ -25,7 +25,12 @@ class FoldersController extends Controller
      */
     public function index()
     {
-        $folders = DB::table('folders')->get();        
+        $folders = DB::table('folders')
+            ->select(DB::raw('count(*) as count'))
+            ->leftJoin('photos', 'folder_id', '=', 'photos.folder_id')
+            ->get();
+
+        dd($folders);
 
         return view('folders.index', compact('folders'));
     }
@@ -49,7 +54,7 @@ class FoldersController extends Controller
     public function store(Request $request)
     {
         $folder_id = DB::table('folders')->insertGetId([
-            'name' => $request->input('folder_name'), 
+            'name' => $request->input('folder_name'),
             'description' => $request->input('folder_description')
         ]);
 
@@ -57,7 +62,7 @@ class FoldersController extends Controller
             foreach($request->file('folder_file') as $file) {
                 $path = Storage::putFile('photos', $file);
                 DB::table('photos')->insert([
-                    'folder_id' => $folder_id, 
+                    'folder_id' => $folder_id,
                     'path' => $path
                 ]);
             }
