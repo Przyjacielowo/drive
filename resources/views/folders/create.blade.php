@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="content-wrapper">
+    <div class="content-wrapper no-color-content">
         <div class="col-md-10 my-2 d-flex">
             <a type="button" href="{{ route('folders.index') }}" class="btn btn-primary ml-auto">Lista</a>
         </div>
