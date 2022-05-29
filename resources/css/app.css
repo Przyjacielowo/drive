@@ -92,6 +92,8 @@
 .image_container:hover .image_name
 {
 	display: block;
+	transition-delay: 1s;
+	transition-property: display;
 }
 
 .image_container .image_delete
