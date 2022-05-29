@@ -63,7 +63,7 @@
 {
 	width: 300px;
 	height: 300px;
-	position: absolute;
+	position: relative;
 	cursor: pointer;
 }
 
@@ -78,7 +78,7 @@
 .image_container .image_name
 {
 	display: none;
-	position: relative;
+	position: absolute;
 	height: 50px;
 	width: 100%;
 	background-color: rgb(30, 30, 30, 0.8);
