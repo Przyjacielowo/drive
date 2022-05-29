@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<div class="content-wrapper">
+	<div class="margin-content-wraper content-wrapper">
 		<div class="folder_container">
 			<div class="folder_icon">
 				<i class="fa-solid fa-folder fa-10x"></i>

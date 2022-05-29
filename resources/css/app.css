@@ -1,3 +1,10 @@
+/* content wraper margin */
+
+.margin-content-wraper
+{
+	margin: 0 15px;
+}
+
 /* file upload input */
 
 .file_upload_input

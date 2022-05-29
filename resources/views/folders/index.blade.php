@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="content-wrapper no-color-content">
+    <div class="margin-content-wraper content-wrapper no-color-content">
         <div class="col-md-10 my-2 d-flex">
             <a type="button" href="{{ route('folders.create') }}" class="btn btn-primary ml-auto">Dodaj</a>
         </div>
