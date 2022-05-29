@@ -59,12 +59,20 @@
 
 /* img size */
 
+.images_container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
 .image_container
 {
 	width: 300px;
 	height: 300px;
 	position: relative;
 	cursor: pointer;
+	margin: 10px;
 }
 
 .image_container .image img
@@ -85,7 +93,7 @@
 	font-size: 22px;
 	padding: 8px 10px;
 	color: rgb(255, 255, 255);
-	bottom: 50px;
+	bottom: 0;
 	border-radius: 0 0 15px 15px;
 }
 
