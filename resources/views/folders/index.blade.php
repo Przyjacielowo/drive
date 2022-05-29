@@ -1,11 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="content-wrapper">
+    <div class="content-wrapper no-color-content">
         <div class="col-md-10 my-2 d-flex">
             <a type="button" href="{{ route('folders.create') }}" class="btn btn-primary ml-auto">Dodaj</a>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 mx-auto">
             <div class="card card-primary">
                 <div class="card-header">
                     <h3 class="card-title">Foldery</h3>
