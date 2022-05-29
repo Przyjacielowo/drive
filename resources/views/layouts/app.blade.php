@@ -26,7 +26,7 @@
     @guest
 
     <div style="width: 100%; border-botom: 1px solid rgb(30, 30, 30); padding: 10px 0 5px 10px">
-        <a href="{{ route('home') }}" class="nav-link" style="font-weight: 700; font-size: 22px;">drive.ridiculam.pl</a>
+        <a href="{{ route('home') }}" class="nav-link" style="font-weight: 700; font-size: 22px; color: rgb(0, 0, 0);">drive.ridiculam.pl</a>
     </div>
 
     @endguest
