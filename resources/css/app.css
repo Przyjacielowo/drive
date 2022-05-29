@@ -68,8 +68,8 @@
 
 .image_container
 {
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	position: relative;
 	cursor: pointer;
 	margin: 10px;
@@ -77,8 +77,8 @@
 
 .image_container .image img
 {
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 	box-shadow: 8px 8px 24px -9px rgb(66 68 90);
   border-radius: 15px;
 }
