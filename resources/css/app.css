@@ -75,7 +75,7 @@
   border-radius: 15px;
 }
 
-.image_name
+.image_container .image_name
 {
 	display: none;
 	position: relative;
@@ -83,7 +83,7 @@
 	width: 100%;
 	background-color: rgb(30, 30, 30, 0.8);
 	font-size: 22px;
-	padding: 0 10px;
+	padding: 8px 10px;
 	color: rgb(255, 255, 255);
 	bottom: 50px;
 	border-radius: 0 0 15px 15px;
@@ -92,4 +92,17 @@
 .image_container:hover .image_name
 {
 	display: block;
+}
+
+.image_container .image_delete
+{
+	position: absolute;
+	display: none;
+	
+}
+
+.image_container:hover .image_delete
+{
+	display: block;
+	color: rgb(125, 125, 125);
 }
