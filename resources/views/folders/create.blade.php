@@ -5,7 +5,7 @@
         <div class="col-md-10 my-2 d-flex">
             <a type="button" href="{{ route('folders.index') }}" class="btn btn-primary ml-auto">Lista</a>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 mx-auto">
             <div class="card card-primary">
                 <div class="card-header">
                     <h3 class="card-title">Dodaj folder</h3>
