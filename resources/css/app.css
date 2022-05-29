@@ -92,8 +92,6 @@
 .image_container:hover .image_name
 {
 	display: block;
-	transition-delay: 1s;
-	transition-property: display;
 }
 
 .image_container .image_delete
@@ -103,6 +101,7 @@
 	top: 0;
 	right: 0;
 	padding: 5px 10px;
+	font-size: 20px;
 }
 
 .image_container:hover .image_delete
