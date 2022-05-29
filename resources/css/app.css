@@ -98,11 +98,12 @@
 {
 	position: absolute;
 	display: none;
-	
+	top: 3px;
+	right: 3px;
 }
 
 .image_container:hover .image_delete
 {
 	display: block;
-	color: rgb(125, 125, 125);
+	color: rgb(255, 96, 96);
 }

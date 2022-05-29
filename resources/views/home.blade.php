@@ -18,9 +18,7 @@
 				<span>DSC00212.JPG</span>
 			</div>
 			<div class="image_delete">
-				<button>
 					<i class="fa-solid fa-trash-can"></i>
-				</button>
 			</div>
 		</div>
 
