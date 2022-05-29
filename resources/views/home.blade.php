@@ -14,6 +14,9 @@
 			<div class="image">
 				<img src="https://www.sony.pl/image/bc6d25fa6371c2899ce704a2bed7614c?fmt=png-alpha&wid=960">
 			</div>
+			<div class="image_name">
+				
+			</div>
 		</div>
 
 

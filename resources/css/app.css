@@ -59,8 +59,29 @@
 
 /* img size */
 
+.image_container
+{
+	width: 300px;
+	height: 300px;
+	position: absolute;
+}
+
 .image_container .image img
 {
 	width: 300px;
 	height: 300px;
+	box-shadow: 8px 8px 24px -9px rgb(66 68 90);
+  border-radius: 15px;
+}
+
+.image_name
+{
+	display: none;
+	position: relative;
+	height: 100px;
+}
+
+.image img:hover .image_name
+{
+	display: block;
 }
