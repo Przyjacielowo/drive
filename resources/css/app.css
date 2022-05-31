@@ -72,7 +72,7 @@
 	height: 250px;
 	position: relative;
 	cursor: pointer;
-	margin: 10px;
+	margin: 5px;
 }
 
 .image_container .image img
@@ -80,7 +80,7 @@
 	width: 250px;
 	height: 250px;
 	box-shadow: 8px 8px 24px -9px rgb(66 68 90);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .image_container .image_name
@@ -94,7 +94,7 @@
 	padding: 8px 10px;
 	color: rgb(255, 255, 255);
 	bottom: 0;
-	border-radius: 0 0 15px 15px;
+	border-radius: 0 0 5px 5px;
 }
 
 .image_container:hover .image_name
