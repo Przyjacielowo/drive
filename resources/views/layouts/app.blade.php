@@ -113,7 +113,7 @@
                     </ul>
                 </li> --}}
                 <li class="nav-item">
-                    <a href="{{ route('folders.index') }}" class="nav-link active">
+                    <a href="{{ route('folders.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
                             Foldery
@@ -121,7 +121,15 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('users.create') }}" class="nav-link active">
+                    <a href="{{ route('users.create') }}" class="nav-link">
+                        <i class="fa-solid fa-users"></i>
+                        <p>
+                            Użytkownicy
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('users.create') }}" class="nav-link">
                         <i class="fa-solid fa-users"></i>
                         <p>
                             Użytkownicy
