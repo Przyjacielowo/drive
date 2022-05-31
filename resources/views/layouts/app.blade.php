@@ -122,7 +122,7 @@
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('users.index') }}" class="nav-link active">
-                        <i class="nav-icon fas fa-copy"></i>
+                        <i class="fa-solid fa-users"></i>
                         <p>
                             Użytkownicy
                         </p>
