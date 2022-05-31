@@ -121,7 +121,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('users.index') }}" class="nav-link active">
+                    <a href="{{ route('users.create') }}" class="nav-link active">
                         <i class="fa-solid fa-users"></i>
                         <p>
                             Użytkownicy
