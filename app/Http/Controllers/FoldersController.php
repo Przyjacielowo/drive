@@ -68,7 +68,6 @@ class FoldersController extends Controller
         if($request->file('folder_file')) {
             foreach($request->file('folder_file') as $file) {
                 $path = Storage::putFile('', $file);
-                dd($path);
                 DB::table('photos')->insert([
                     'folder_id' => $folder_id,
                     'path' => $path
