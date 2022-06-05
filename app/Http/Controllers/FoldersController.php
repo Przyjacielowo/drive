@@ -85,6 +85,14 @@ class FoldersController extends Controller
     {
         $photos = DB::table('photos')->where('folder_id', $folder->id)->get();
 
+        $images = array();
+
+        foreach ($photos as $photo) {
+            $images[] = Storage::get($photo->path);
+        }
+
+        dd($images);
+        
         return view('folders.show', [
             'folder' => $folder,
             'photos' => $photos
