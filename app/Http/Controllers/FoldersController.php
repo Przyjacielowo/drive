@@ -74,7 +74,7 @@ class FoldersController extends Controller
             }
         }
 
-        return redirect()->route('home');
+        return redirect()->route('folders');
     }
 
     /**
