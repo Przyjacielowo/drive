@@ -4,13 +4,22 @@
 
 <div class="margin-content-wraper content-wrapper">
 	<div class="folder_container">
-		<div class="folder_icon">
-			<i class="fa-solid fa-folder-open fa-10x"></i>
-		</div>
-		<div>
+		<a href="#">
+			<div class="folder_icon">
+				<i class="fa-solid fa-folder-open fa-10x"></i>
+			</div>
 			<span>Nazwa folderu</span>
-		</div>
+		</a>
 	</div>
+	<div class="folder_container">
+		<a href="#">
+			<div class="folder_icon">
+				<i class="fa-solid fa-folder-open fa-10x"></i>
+			</div>
+			<span>1242356t3 htbeihonsdpcjfgbasipodbshedfp[</span>
+		</a>
+	</div>
+
 	
 	
 	

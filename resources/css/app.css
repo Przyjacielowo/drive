@@ -123,3 +123,18 @@
 {
 	color: 	rgb(255, 0, 64);
 }
+
+
+/* folder container */
+
+
+.folder_container
+{
+	display: inline-block;
+}
+
+.folder_container span
+{
+	text-align: center;
+	
+}
