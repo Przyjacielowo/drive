@@ -88,10 +88,6 @@ class FoldersController extends Controller
     {
         $photos = DB::table('photos')->where('folder_id', $folder->id)->get();
 
-        foreach ($photos as $photo) {
-            echo asset('storage/' . $photo->path);
-        }
-
         return view('folders.show', [
             'folder' => $folder,
             'photos' => $photos
