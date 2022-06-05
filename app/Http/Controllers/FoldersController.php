@@ -80,11 +80,14 @@ class FoldersController extends Controller
      * @param  Folders $folders
      * @return ViewException
      */
-    public function show(Folders $folders): ViewException
+    public function show(Folders $folder): ViewException
     {
-        $photos =  DB::table('photos')->where('folder_id', $folders->id)->get();
+        $photos =  DB::table('photos')->where('folder_id', $folder->id)->get();
         dd($photos);
-        return view('folders.show', compact('folders'));
+        return view('folders.show', [
+            'folder' => $folder,
+            'photos' => $photos
+        ]);
     }
 
     /**
