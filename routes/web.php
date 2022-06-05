@@ -19,7 +19,7 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::resource('folders', App\Http\Controllers\FoldersController::class);
     Route::resource('users', App\Http\Controllers\UsersController::class);
-    Route::get('folders/{id}/photos', App\Http\Controllers\UsersController::class)->name('folders.photos');
+    // Route::get('folders/{id}/photos', App\Http\Controllers\UsersController::class)->name('folders.photos');
 });
 
 Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login');
