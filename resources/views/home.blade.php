@@ -3,25 +3,27 @@
 @section('content')
 
 <div class="margin-content-wraper content-wrapper">
-	<div class="folder_container">
-		<a href="#">
-			<div class="folder_icon">
-				<i class="fa-solid fa-folder-open fa-10x"></i>
-			</div>
-			<div>
-				<span>Nazwa folderu</span>
-			</div>
-		</a>
-	</div>
-	<div class="folder_container">
-		<a href="#">
-			<div class="folder_icon">
-				<i class="fa-solid fa-folder-open fa-10x"></i>
-			</div>
-			<div>
-				<span>1242356t3 htbeihonsdpcjfgbasipodbshedfp</span>
-			</div>
-		</a>
+	<div class="folders_container">
+		<div class="folder_container">
+			<a href="#">
+				<div class="folder_icon">
+					<i class="fa-solid fa-folder-open fa-10x"></i>
+				</div>
+				<div>
+					<span>Nazwa folderu</span>
+				</div>
+			</a>
+		</div>
+		<div class="folder_container">
+			<a href="#">
+				<div class="folder_icon">
+					<i class="fa-solid fa-folder-open fa-10x"></i>
+				</div>
+				<div>
+					<span>1242356t3 htbeihonsdpcjfgbasipodbshedfp</span>
+				</div>
+			</a>
+		</div>
 	</div>
 
 	
