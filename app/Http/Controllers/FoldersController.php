@@ -6,6 +6,8 @@ use App\Models\Folders;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+use Illuminate\View\ViewException;
+use JetBrains\PhpStorm\NoReturn;
 
 class FoldersController extends Controller
 {
@@ -75,11 +77,13 @@ class FoldersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @param  Folders $folders
+     * @return ViewException
      */
-    public function show(Folders $folders)
+    public function show(Folders $folders): ViewException
     {
+        $photos =  DB::table('photos')->where('folder_id', $folders->id)->get();
+        dd($photos);
         return view('folders.show', compact('folders'));
     }
 
