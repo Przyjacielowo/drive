@@ -8,7 +8,9 @@
 			<div class="folder_icon">
 				<i class="fa-solid fa-folder-open fa-10x"></i>
 			</div>
-			<span>Nazwa folderu</span>
+			<div>
+				Nazwa folderu
+			</div>
 		</a>
 	</div>
 	<div class="folder_container">
@@ -16,7 +18,9 @@
 			<div class="folder_icon">
 				<i class="fa-solid fa-folder-open fa-10x"></i>
 			</div>
-			<span>1242356t3 htbeihonsdpcjfgbasipodbshedfp[</span>
+			<div>
+				1242356t3 htbeihonsdpcjfgbasipodbshedfp
+			</div>
 		</a>
 	</div>
 
