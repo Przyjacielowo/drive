@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Folders;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
@@ -25,7 +26,7 @@ class FoldersController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
@@ -42,7 +43,7 @@ class FoldersController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -52,10 +53,10 @@ class FoldersController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return Response
      */
-    public function store(Request $request)
+    public function store(Request $request): Response
     {
         $folder_id = DB::table('folders')->insertGetId([
             'name' => $request->input('folder_name'),
@@ -64,7 +65,7 @@ class FoldersController extends Controller
 
         if($request->file('folder_file')) {
             foreach($request->file('folder_file') as $file) {
-                $path = Storage::putFile('photos', $file);
+                $path = Storage::putFile('public', $file);
                 DB::table('photos')->insert([
                     'folder_id' => $folder_id,
                     'path' => $path
@@ -95,7 +96,7 @@ class FoldersController extends Controller
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function edit($id)
     {
@@ -105,9 +106,9 @@ class FoldersController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function update(Request $request, $id)
     {
@@ -118,7 +119,7 @@ class FoldersController extends Controller
      * Remove the specified resource from storage.
      *
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function destroy($id)
     {
