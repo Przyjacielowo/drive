@@ -131,16 +131,23 @@
 .folder_container
 {
 	display: inline-block;
-	margin: 10px;
+	margin: 20px;
 }
+
 .folder_container a
 {
 	text-decoration: none;
 	color: rgb(40, 40, 40, 0.6);
 }
 
+.folder_container a:hover
+{
+	color: rgba(0, 255, 60, 0.6);
+}
+
 .folder_container div:last-child
 {
+	max-width: 180px;
 	text-align: center;
 	color: rgba(66, 68, 90);
 }

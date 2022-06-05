@@ -9,7 +9,7 @@
 				<i class="fa-solid fa-folder-open fa-10x"></i>
 			</div>
 			<div>
-				Nazwa folderu
+				<span>Nazwa folderu</span>
 			</div>
 		</a>
 	</div>
@@ -19,7 +19,7 @@
 				<i class="fa-solid fa-folder-open fa-10x"></i>
 			</div>
 			<div>
-				1242356t3 htbeihonsdpcjfgbasipodbshedfp
+				<span>1242356t3 htbeihonsdpcjfgbasipodbshedfp</span>
 			</div>
 		</a>
 	</div>
