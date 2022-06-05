@@ -29,7 +29,7 @@
                                 <td>{{ $folder->count }}</td>
                                 <td>
                                     <div class="btn-group btn-group-sm" role="group">
-                                        <button type="button" class="btn btn-primary">Zobacz</button>
+                                        <a href="{{ route('folders/', $folder->id) }}"><button type="button" class="btn btn-primary">Zobacz</button></a>
                                         <button type="button" class="btn btn-success">Edytuj</button>
                                         <button type="button" class="btn btn-danger">Usuń</button>
                                     </div>
