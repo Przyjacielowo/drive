@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Folders;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
@@ -77,9 +78,9 @@ class FoldersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Folders $folders)
     {
-        //
+        return view('folders.show', compact('folders'));
     }
 
     /**
