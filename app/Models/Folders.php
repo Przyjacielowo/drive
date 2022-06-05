@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Folders extends Model
 {
     use HasFactory;
+
+    public mixed $id;
 }

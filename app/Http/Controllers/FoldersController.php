@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Folders;
+use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
@@ -77,12 +78,13 @@ class FoldersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  Folders $folders
-     * @return ViewException
+     * @param Folders $folder
+     * @return View
      */
-    public function show(Folders $folder)
+    public function show(Folders $folder): View
     {
-        $photos =  DB::table('photos')->where('folder_id', $folder->id)->get();
+        $photos = DB::table('photos')->where('folder_id', $folder->id)->get();
+
         return view('folders.show', [
             'folder' => $folder,
             'photos' => $photos
