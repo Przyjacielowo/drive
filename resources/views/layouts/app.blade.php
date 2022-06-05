@@ -113,6 +113,14 @@
                     </ul>
                 </li> --}}
                 <li class="nav-item">
+                    <a href="{{ route('home') }}" class="nav-link">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <p>
+                            Strona główna
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('folders.index') }}" class="nav-link">
                         <i class="nav-icon fas fa-copy"></i>
                         <p>
