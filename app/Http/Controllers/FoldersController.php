@@ -43,9 +43,9 @@ class FoldersController extends Controller
     /**
      * Show the form for creating a new resource.
      *
-     * @return Response
+     * @return View
      */
-    public function create()
+    public function create(): View
     {
         return view('folders.create');
     }
