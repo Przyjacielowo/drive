@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Folders;
 use Illuminate\Contracts\View\View;
 use Illuminate\Http\Response;
+use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
@@ -54,9 +55,9 @@ class FoldersController extends Controller
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return RedirectResponse
+     * @return Route
      */
-    public function store(Request $request): RedirectResponse
+    public function store(Request $request): Route
     {
         $folder_id = DB::table('folders')->insertGetId([
             'name' => $request->input('folder_name'),
