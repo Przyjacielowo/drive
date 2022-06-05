@@ -3,20 +3,19 @@
 @section('content')
     <div class="margin-content-wraper content-wrapper">
         <div class="folder_container">
-            <span>Nazwa folderu.pl</span>
+            <span>{{ $folder->name }}</span>
         </div>
         <div class="images_container">
+            @foreach($photos as $photo)
             <div class="image_container">
                 <div class="image">
-                    <img src="https://www.sony.pl/image/bc6d25fa6371c2899ce704a2bed7614c?fmt=png-alpha&wid=960">
-                </div>
-                <div class="image_name">
-                    <span>DSC00212.JPG</span>
+                    <img src="{{ asset('storage' . $photo->path) }}">
                 </div>
                 <div class="image_delete">
                     <i class="fa-solid fa-trash-can"></i>
                 </div>
             </div>
+            @endforeach
         </div>
     </div>
 @endsection
