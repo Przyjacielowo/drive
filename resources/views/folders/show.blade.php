@@ -9,7 +9,7 @@
             @foreach($photos as $photo)
             <div class="image_container">
                 <div class="image">
-                    <img src="{{ asset('storage/' . $photo->path) }}">
+                    <img src="{{ asset('storage/app/' . $photo->path) }}">
                 </div>
                 <div class="image_delete">
                     <i class="fa-solid fa-trash-can"></i>
