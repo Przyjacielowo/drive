@@ -5,7 +5,7 @@
 <div class="margin-content-wraper content-wrapper">
 	<div class="folder_container">
 		<div class="folder_icon">
-			<i class="fa-solid fa-folder-image"></i>
+			<i class="fa-duotone fa-folder-open"></i>
 		</div>
 		<div>
 			<span>Nazwa folderu</span>
