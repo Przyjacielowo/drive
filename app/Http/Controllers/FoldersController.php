@@ -93,7 +93,7 @@ class FoldersController extends Controller
 
         return view('folders.show', [
             'folder' => $folder,
-            'photos' => $images
+            'images' => $images
         ]);
     }
 
