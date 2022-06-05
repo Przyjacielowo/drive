@@ -54,9 +54,9 @@ class FoldersController extends Controller
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return Response
+     * @return RedirectResponse
      */
-    public function store(Request $request): Response
+    public function store(Request $request): RedirectResponse
     {
         $folder_id = DB::table('folders')->insertGetId([
             'name' => $request->input('folder_name'),
