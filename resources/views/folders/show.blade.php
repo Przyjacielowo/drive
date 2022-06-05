@@ -6,10 +6,10 @@
             <span>{{ $folder->name }}</span>
         </div>
         <div class="images_container">
-            @foreach($photos as $photo)
+            @foreach($images as $image)
             <div class="image_container">
                 <div class="image">
-                    <img src="{{ asset('storage/' . $photo->path) }}">
+                    <img src="{{ $image }}">
                 </div>
                 <div class="image_delete">
                     <i class="fa-solid fa-trash-can"></i>

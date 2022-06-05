@@ -91,11 +91,9 @@ class FoldersController extends Controller
             $images[] = Storage::get($photo->path);
         }
 
-        dd($images);
-        
         return view('folders.show', [
             'folder' => $folder,
-            'photos' => $photos
+            'photos' => $images
         ]);
     }
 
