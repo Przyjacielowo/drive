@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="card-footer">
-                        <button type="submit" class="btn btn-primary">Dodaj</button>
+                        <button type="submit" class="btn btn-primary">Zapisz</button>
                     </div>
                 </form>
 
