@@ -100,9 +100,11 @@ class FoldersController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function edit($id)
+    public function edit(Folders $folder)
     {
-        return view('folders.edit');
+        return view('folders.edit', [
+            'folder' => $folder,
+        ]);
     }
 
     /**
