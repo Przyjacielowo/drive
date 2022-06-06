@@ -9,5 +9,4 @@ class Folders extends Model
 {
     use HasFactory;
 
-    public mixed $id;
 }
