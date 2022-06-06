@@ -139,9 +139,9 @@ class FoldersController extends Controller
      * Remove the specified resource from storage.
      *
      * @param Folders $folder
-     * @return Response
+     * @return RedirectResponse
      */
-    public function destroy(Folders $folder): Response
+    public function destroy(Folders $folder): RedirectResponse
     {
         $folder->delete();
         DB::table('photos')->where('folder_id', $folder->id)->delete();
