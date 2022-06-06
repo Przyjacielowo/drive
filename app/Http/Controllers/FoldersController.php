@@ -114,9 +114,23 @@ class FoldersController extends Controller
      * @param  int  $id
      * @return Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Folders $folder)
     {
-        //
+        $folder_id = DB::table('folders')->where('id', $folder->id)->update([
+            'name' => $request->input('folder_name'),
+            'description' => $request->input('folder_description')
+        ]);
+
+        if($request->file('folder_file')) {
+            foreach($request->file('folder_file') as $file) {
+                $path = Storage::putFile('photos', $file);
+                DB::table('photos')->insert([
+                    'folder_id' => $folder->id,
+                    'path' => $path
+                ]);
+            }
+        }
+
     }
 
     /**
