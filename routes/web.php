@@ -22,7 +22,6 @@ Route::group(['middleware' => 'auth'], function () {
     // Route::get('folders/{id}/photos', App\Http\Controllers\UsersController::class)->name('folders.photos');
 });
 
-Route::get('/', [App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login');
 Route::get('/login', [App\Http\Controllers\Auth\LoginController::class, 'index'])->name('login');
 
 Auth::routes([
