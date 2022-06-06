@@ -30,7 +30,7 @@
                                 <td>
                                     <div class="btn-group btn-group-sm" role="group">
                                         <a href="{{ route('folders.show', $folder->id) }}"><button type="button" class="btn btn-primary">Zobacz</button></a>
-                                        <button type="button" class="btn btn-success">Edytuj</button>
+                                        <a href="{{ route('folders.edit', $folder->id) }}"><button type="button" class="btn btn-success">Edytuj</button></a>
                                         <button type="button" class="btn btn-danger">Usuń</button>
                                     </div>
                                 </td>
