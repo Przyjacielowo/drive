@@ -86,7 +86,7 @@ class FoldersController extends Controller
      */
     public function show(Folders $folder): View
     {
-        $photos = DB::table('photos')->where('folder_id', $folder->id)->get();
+        $photos = DB::table('photos')->find($folder);
 
         return view('folders.show', [
             'folder' => $folder,
