@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Folders;
 use Illuminate\Contracts\View\View;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Redirector;
 use Illuminate\Routing\Route;
@@ -56,9 +57,9 @@ class FoldersController extends Controller
      * Store a newly created resource in storage.
      *
      * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @return RedirectResponse
      */
-    public function store(Request $request): \Illuminate\Http\RedirectResponse
+    public function store(Request $request): RedirectResponse
     {
         $folder_id = DB::table('folders')->insertGetId([
             'name' => $request->input('folder_name'),
@@ -111,10 +112,10 @@ class FoldersController extends Controller
      * Update the specified resource in storage.
      *
      * @param Request $request
-     * @param  int  $id
-     * @return Response
+     * @param Folders $folder
+     * @return RedirectResponse
      */
-    public function update(Request $request, Folders $folder)
+    public function update(Request $request, Folders $folder): RedirectResponse
     {
         DB::table('folders')->where('id', $folder->id)->update([
             'name' => $request->input('folder_name'),
@@ -131,6 +132,7 @@ class FoldersController extends Controller
             }
         }
 
+        return redirect()->route('folders.index');
     }
 
     /**
