@@ -31,7 +31,11 @@
                                     <div class="btn-group btn-group-sm" role="group">
                                         <a href="{{ route('folders.show', $folder->id) }}"><button type="button" class="btn btn-primary">Zobacz</button></a>
                                         <a href="{{ route('folders.edit', $folder->id) }}"><button type="button" class="btn btn-success">Edytuj</button></a>
-                                        <a href="{{ route('folders.destroy', $folder->id) }}"><button type="button" class="btn btn-danger">Usuń</button></a>
+                                        <form action="{{ route('folders.destroy', $folder->id) }}" method="post">
+                                            @method('DELETE')
+                                            @csrf
+                                            <button type="submit" class="btn btn-danger">Usuń</button>
+                                        </form>
                                     </div>
                                 </td>
                             </tr>
