@@ -11,7 +11,7 @@
                     <h3 class="card-title">Edytuj folder</h3>
                 </div>
 
-                <form action="{{ route('folders.update', $folder->id) }}" method="post" enctype="multipart/form-data">
+                <form action="{{ route('folders.update', $folder->id) }}" method="put" enctype="multipart/form-data">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
