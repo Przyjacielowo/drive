@@ -116,7 +116,7 @@ class FoldersController extends Controller
      */
     public function update(Request $request, Folders $folder)
     {
-        $folder_id = DB::table('folders')->where('id', $folder->id)->update([
+        DB::table('folders')->where('id', $folder->id)->update([
             'name' => $request->input('folder_name'),
             'description' => $request->input('folder_description')
         ]);
