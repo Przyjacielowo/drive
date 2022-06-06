@@ -143,7 +143,7 @@ class FoldersController extends Controller
      */
     public function destroy(Folders $folder): Response
     {
-        DB::table('folders')->find(id: $folder->id)->delete();
+        DB::table('folders')->find($folder->id)->delete();
         DB::table('photos')->where('folder_id', $folder->id)->delete();
 
         return redirect()->route('folders.index');
